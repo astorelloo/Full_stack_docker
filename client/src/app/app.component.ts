@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
+  data: any;
   constructor(private http: HttpClient)
   {
     this.http.get("TUO_URL/simple_json")
